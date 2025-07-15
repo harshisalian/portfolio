@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import "tailwindcss";
+
+/* Pixel/Retro Font Import */
+
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --pixel-font: 'Press Start 2P', 'Geist Mono', monospace;
 }
 
 @theme inline {
@@ -23,4 +28,43 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.pixel-font {
+  font-family: var(--pixel-font) !important;
+  letter-spacing: 0.05em;
+}
+
+.pixel-card {
+  box-shadow: 0 4px 0 #232b45, 0 8px 0 #101624;
+  border-radius: 8px;
+  border: 2px solid #232b45;
+}
+
+/* Animation utilities */
+@keyframes updown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-16px); }
+}
+.animate-updown {
+  animation: updown 2s infinite;
+}
+
+@keyframes leftright {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(16px); }
+}
+.animate-leftright {
+  animation: leftright 2s infinite;
+}
+
+@keyframes greet {
+  0%, 100% { transform: rotate(0deg); }
+  20% { transform: rotate(-15deg); }
+  40% { transform: rotate(15deg); }
+  60% { transform: rotate(-10deg); }
+  80% { transform: rotate(10deg); }
+}
+.animate-greet {
+  animation: greet 1.5s infinite;
 }

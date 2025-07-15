@@ -25,9 +25,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#101624] text-white min-h-screen`}
       >
-        {children}
+        <nav className="w-full flex items-center justify-between px-8 py-4 border-b border-[#232b45] bg-[#181e34] shadow-md">
+          <div className="flex items-center gap-3">
+            <span className="text-2xl font-bold tracking-widest pixel-font">&#9728; Portfolio</span>
+          </div>
+          <ul className="flex gap-6 text-lg font-mono">
+            <li><a href="#home" className="hover:text-yellow-400 transition">Home</a></li>
+            <li><a href="#projects" className="hover:text-yellow-400 transition">Projects</a></li>
+            <li><a href="#blog" className="hover:text-yellow-400 transition">Blog</a></li>
+            <li><a href="#about" className="hover:text-yellow-400 transition">About</a></li>
+            <li><a href="#contact" className="hover:text-yellow-400 transition">Contact</a></li>
+          </ul>
+        </nav>
+        <main className="max-w-5xl mx-auto w-full px-4">
+          {children}
+        </main>
       </body>
     </html>
   );
