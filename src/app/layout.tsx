@@ -37,6 +37,7 @@ export default function RootLayout({
             <li><a href="#blog" className="hover:text-yellow-400 transition">Blog</a></li>
             <li><a href="#about" className="hover:text-yellow-400 transition">About</a></li>
             <li><a href="#contact" className="hover:text-yellow-400 transition">Contact</a></li>
+            <li><a href="/profile" className="hover:text-yellow-400 transition">Profile</a></li>
           </ul>
         </nav>
         <main className="max-w-5xl mx-auto w-full px-4">
