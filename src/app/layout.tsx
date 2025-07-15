@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className="pixel-font antialiased bg-[#101624] text-white min-h-screen"
       >
-        <nav className="w-full flex items-center justify-between px-8 py-4 border-b border-[#232b45] bg-[#181e34] shadow-md">
+        <nav className="w-full flex items-center justify-between px-8 py-6 border-b-4 border-[#232b45] bg-[#181e34] shadow-lg min-h-[72px]">
           <div className="flex items-center gap-3">
             <span className="text-2xl font-bold tracking-widest pixel-font">&#9728; Portfolio</span>
           </div>
