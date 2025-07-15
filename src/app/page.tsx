@@ -5,7 +5,7 @@ export default function Home() {
     <div className="flex flex-col gap-16 py-12">
       {/* Home Section */}
       <section id="home" className="flex flex-col items-center gap-4">
-        <h1 className="text-4xl font-bold pixel-font text-yellow-400 mb-2">Hi, I'm Harshitha Salian</h1>
+        <h1 className="text-4xl font-bold pixel-font text-yellow-400 mb-2">Hi, I&apos;m Harshitha Salian</h1>
         <p className="text-lg text-gray-300 max-w-xl text-center">Third-year Computer Science Engineering student at Shree Devi Institute of Technology, passionate about coding, technology, and real-world projects. Always curious and open to new opportunities for growth.</p>
       </section>
 
