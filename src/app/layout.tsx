@@ -24,21 +24,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="pixel-font antialiased bg-[#4a1d59] text-white min-h-screen">
+      <body
+        className="pixel-font antialiased bg-[#101624] text-white min-h-screen"
+      >
         <nav className="w-full flex items-center justify-between px-8 py-6 border-b-4 border-[#232b45] bg-[#181e34] shadow-lg min-h-[72px]">
           <div className="flex items-center gap-3">
-            <span className="text-2xl font-bold tracking-widest pixel-font">&#9728; Portfolio</span>
+            <span className="text-2xl font-bold tracking-widest pixel-font"> Portfolio</span>
           </div>
-          <ul className="flex gap-6 text-lg font-mono">
-            <li><a href="#home" className="hover:text-yellow-400 transition">Home</a></li>
-            <li><a href="#projects" className="hover:text-yellow-400 transition">Projects</a></li>
-            <li><a href="#blog" className="hover:text-yellow-400 transition">Blog</a></li>
-            <li><a href="#about" className="hover:text-yellow-400 transition">About</a></li>
-            <li><a href="#contact" className="hover:text-yellow-400 transition">Contact</a></li>
-            <li><a href="/profile" className="hover:text-yellow-400 transition">Profile</a></li>
+          <ul className="flex gap-6 text-base font-mono">
+            <li><a href="#home" className="hover:text-yellow-400 transition mt-[6px]">Home</a></li>
+            <li><a href="#projects" className="hover:text-yellow-400 transition mt-[6px]">Projects</a></li>
+            <li><a href="#blog" className="hover:text-yellow-400 transition mt-[6px]">Blog</a></li>
+            <li><a href="#about" className="hover:text-yellow-400 transition mt-[6px]">About</a></li>
+            <li><a href="#contact" className="hover:text-yellow-400 transition mt-[6px]">Contact</a></li>
+            <li><a href="/profile" className="hover:text-yellow-400 transition mt-[6px]">Profile</a></li>
           </ul>
         </nav>
-        <main className="max-w-5xl mx-auto w-full px-4">
+        <main className="w-full px-2">
           {children}
         </main>
       </body>

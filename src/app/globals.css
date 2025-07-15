@@ -7,7 +7,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #120018;
   --pixel-font: 'Press Start 2P', 'Geist Mono', monospace;
 }
 
@@ -20,7 +20,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #120018;
     --foreground: #ededed;
   }
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .pixel-card {
-  box-shadow: 0 4px 0 #232b45, 0 8px 0 #101624;
+  box-shadow: 0 4px 0 #232b45, 0 8px 0 #120018;
   border-radius: 8px;
   border: 2px solid #232b45;
 }
