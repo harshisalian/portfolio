@@ -43,6 +43,10 @@ export default function RootLayout({
         <main className="w-full px-2">
           {children}
         </main>
+        <footer className="w-full bg-[#181e34] border-t-4 border-[#232b45] py-4 mt-8 flex flex-col items-center justify-center text-gray-300 text-sm">
+          <span>&copy; {new Date().getFullYear()} Harshitha Salian. All rights reserved.</span>
+          <a href="#" className="text-yellow-400 underline hover:text-yellow-300 mt-1">Terms &amp; Conditions</a>
+        </footer>
       </body>
     </html>
   );

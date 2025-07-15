@@ -129,9 +129,9 @@ export default function Home() {
         </section>
 
         {/* Certifications Section */}
-        <section id="certifications" className="flex flex-col items-center gap-4 mt-[50px]">
+        <section id="certifications" className="flex flex-col items-center gap-4 mt-[150px]">
           <h2 className="text-2xl font-bold pixel-font text-green-400 mb-2">Certifications</h2>
-          <div className="flex flex-row items-center gap-4">
+          <div className="flex flex-row items-center gap-4 mt-[100px]">
             <button onClick={handlePrev} className="text-3xl px-2 py-1 rounded-full bg-[#232b45] text-white hover:bg-green-400 hover:text-[#232b45] transition disabled:opacity-30" disabled={certIndex === 0}>&lt;</button>
             <div className="flex flex-row gap-6 w-[900px] justify-center items-center">
               {showCerts.map((i, idx) => {
@@ -151,6 +151,7 @@ export default function Home() {
                     className={`flex flex-col items-center bg-[#181e34] border border-[#232b45] rounded-lg p-8 shadow-lg pixel-card w-96 transition-all duration-300 ${style}`}
                   >
                     <Image src={cert.src} alt={cert.alt} width={320} height={180} className="rounded mb-4" />
+                    <div className="h-[50px]" />
                     <span className="text-xl text-yellow-300 font-bold text-center mb-1">{cert.title}</span>
                     <span className="text-base text-gray-400 text-center">{cert.issued}</span>
                   </div>
@@ -162,9 +163,10 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="flex flex-col gap-6">
+        <section id="projects" className="flex flex-col gap-6 mt-[200px] mb-[100px]">
           <h2 className="text-2xl font-bold pixel-font text-pink-400 mb-2">Projects</h2>
-          <div className="flex items-center justify-center h-32">
+          <div className="flex flex-col items-center justify-center h-32">
+            <Image src="/cloud enthusiast.png" alt="Projects Coming Soon" width={80} height={80} className="mb-2" />
             <span className="text-lg text-gray-400 italic">Coming Soon...</span>
           </div>
         </section>
@@ -172,14 +174,15 @@ export default function Home() {
         {/* Blog Section */}
         <section id="blog" className="flex flex-col gap-6">
           <h2 className="text-2xl font-bold pixel-font text-green-400 mb-2">Blog</h2>
-          <div className="flex items-center justify-center h-32">
+          <div className="flex flex-col items-center justify-center h-32">
+            <Image src="/blog.png" alt="Blog Coming Soon" width={80} height={80} className="mb-2" />
             <span className="text-lg text-gray-400 italic">Coming Soon...</span>
           </div>
         </section>
       </div>
 
       {/* Contact Section OUTSIDE main container */}
-      <div className="w-full bg-[#101624] py-8">
+      <div className="w-full bg-[#101624] py-8 mt-[200px]">
         <section id="contact" className="flex flex-col items-center gap-4 w-full">
           <h2 className="text-2xl font-bold pixel-font text-purple-400 mb-2">Contact</h2>
           <div className="flex flex-row items-center gap-6 w-full px-8">
@@ -194,7 +197,7 @@ export default function Home() {
           <a href="/resume.pdf" download className="mt-2 text-yellow-300 underline hover:text-yellow-400">Download Resume</a>
         </section>
       </div>
-    </div>
+    </div >
   );
 }
 
