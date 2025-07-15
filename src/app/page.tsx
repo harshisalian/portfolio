@@ -3,6 +3,13 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex flex-col gap-16 py-12">
+      {/* Welcome Box */}
+      <div className="flex items-center gap-4 mb-8">
+        <img src="pixel-computer.png" alt="Pixel Computer" width={64} height={64} className="pixel-art" />
+        <div className="bg-[#232b45] text-white rounded-xl px-6 py-4 pixel-font text-lg shadow-lg border border-[#383e5c]" style={{ fontFamily: 'inherit' }}>
+          Hello people, welcome to etalyx world
+        </div>
+      </div>
       {/* Home Section */}
       <section id="home" className="flex flex-col items-center gap-4">
         <h1 className="text-4xl font-bold pixel-font text-yellow-400 mb-2">Hi, I&apos;m Harshitha Salian</h1>
@@ -23,12 +30,12 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* Example certificate cards, replace src with your actual certificate images */}
           <div className="flex flex-col items-center bg-[#181e34] border border-[#232b45] rounded-lg p-4 shadow-lg pixel-card w-64">
-            <Image src="/cert1.jpg" alt="Deloitte Australia - Cyber Job Simulation" width={200} height={120} className="rounded mb-2" />
+            <Image src="/deloitte.jpg" alt="Deloitte Australia - Cyber Job Simulation" width={200} height={120} className="rounded mb-2" />
             <span className="text-yellow-300 font-bold text-center">Deloitte Australia - Cyber Job Simulation</span>
             <span className="text-gray-400 text-xs text-center">Issued Jun 2025</span>
           </div>
           <div className="flex flex-col items-center bg-[#181e34] border border-[#232b45] rounded-lg p-4 shadow-lg pixel-card w-64">
-            <Image src="/cert2.jpg" alt="AI Tools and ChatGPT Workshop - Be10x" width={200} height={120} className="rounded mb-2" />
+            <Image src="/be10x.png" alt="AI Tools and ChatGPT Workshop - Be10x" width={200} height={120} className="rounded mb-2" />
             <span className="text-yellow-300 font-bold text-center">AI Tools and ChatGPT Workshop - Be10x</span>
             <span className="text-gray-400 text-xs text-center">Issued 2025</span>
           </div>
