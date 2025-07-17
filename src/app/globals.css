@@ -53,6 +53,10 @@ body::before {
   pointer-events: none;
 }
 
+body.game-page::before {
+  display: none !important;
+}
+
 .pixel-font {
   font-family: 'Press Start 2P', 'VT323', 'Geist Mono', monospace !important;
   letter-spacing: 0.05em;
@@ -111,38 +115,93 @@ body::before {
   animation: float-xy 5s ease-in-out infinite;
 }
 
-@keyframes float-ltr {
-  0% { left: -60px; }
-  100% { left: 100vw; }
-}
-@keyframes float-rtl {
-  0% { left: 100vw; }
-  100% { left: -60px; }
-}
-@keyframes float-ttb {
-  0% { top: -40px; }
-  100% { top: 100vh; }
-}
-@keyframes float-btt {
-  0% { top: 100vh; }
-  100% { top: -40px; }
-}
-.floating-box {
-  position: fixed;
-  width: 120px;
-  height: 40px;
-  background: #232b45cc;
-  color: #fff;
-  border-radius: 8px;
-  opacity: 0.5;
+.led-scroller-outer {
+  opacity: 0.7;
+  width: 100% !important;
+  height: 56px;
+  background: #111;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px #000a, 0 0 0 4px #2228;
+  overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 0.8rem;
-  pointer-events: none;
-  z-index: 50;
+  border: 2px solid #222;
+  position: relative;
 }
-.animate-float-ltr { animation: float-ltr 12s linear infinite; top: 10vh; }
-.animate-float-rtl { animation: float-rtl 14s linear infinite; top: 30vh; }
-.animate-float-ttb { animation: float-ttb 16s linear infinite; left: 20vw; }
-.animate-float-btt { animation: float-btt 18s linear infinite; left: 60vw; }
+.led-scroller-inner {
+  display: flex;
+  white-space: nowrap;
+  animation: led-scroll 40s linear infinite;
+}
+.led-scroller-inner span {
+  font-family: 'Press Start 2P', 'VT323', 'Geist Mono', monospace;
+  color: #d414ff;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 4px #d414ff, 0 0 3px #fff, 0 0 1px #fff;
+  user-select: none;
+  padding-right: 2rem;
+}
+@keyframes led-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.pixel-button {
+  background: #e066ff;
+  color: #232b45;
+  font-family: 'Press Start 2P', 'VT323', monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 3px solid #e066ff;
+  border-radius: 6px;
+  box-shadow: 2px 2px 0 #e066ff, 4px 4px 0 #232b45;
+  padding: 0.7rem 2.2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.15s, box-shadow 0.15s, color 0.15s;
+  outline: none;
+  user-select: none;
+  display: inline-block;
+}
+.pixel-button:hover, .pixel-button:focus {
+  background: #9900bf;
+  color: #181e34;
+  box-shadow: 1px 1px 0 #e066ff, 2px 2px 0 #232b45;
+}
+
+.game-no-bg {
+  background: transparent !important;
+  background-image: none !important;
+}
+
+.game-bg {
+  position: relative;
+  background: none !important;
+}
+.game-bg::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('/gamebg.gif') center center / cover no-repeat;
+  opacity: 0.15;
+  z-index: 1000;
+  pointer-events: none;
+}
+.game-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+nav {
+  background-color: #0f1630cc !important; /* 80% opacity */
+  backdrop-filter: blur(2px);
+}
+
+.game-puzzle-box {
+  opacity: 0.95;
+  background: #232b45 !important;
+}

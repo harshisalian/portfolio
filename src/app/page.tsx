@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import LEDScroller from "./LEDScroller";
+import Link from "next/link";
 
 export default function Home() {
   // Typing animation for welcome message
@@ -73,11 +75,6 @@ export default function Home() {
 
   return (
     <div className="relative w-full max-w-6xl mx-auto flex flex-col gap-12 pt-8 px-4">
-      {/* Floating boxes */}
-      <div className="floating-box animate-float-ltr">Floating left→right</div>
-      <div className="floating-box animate-float-rtl">Floating right→left</div>
-      <div className="floating-box animate-float-ttb">Floating top→bottom</div>
-      <div className="floating-box animate-float-btt">Floating bottom→top</div>
       {/* Pixel Computer and Speech Bubble (top left) */}
       <div className="flex flex-row items-center gap-4 mb-8">
         <Image src="/pixel-computer.png" alt="Pixel Computer" width={80} height={80} />
@@ -87,9 +84,9 @@ export default function Home() {
         </div>
       </div>
       {/* Profile Card at top right below nav, sticky and bouncing, 100px from right */}
-      <div className="hidden lg:flex w-full justify-end pointer-events-none" style={{ position: 'sticky', top: '88px', zIndex: 20 }}>
+      <div className="hidden lg:flex w-full justify-end pointer-events-none" style={{ position: 'sticky', top: '18px', zIndex: 20 }}>
         <div
-          className="pointer-events-auto mr-[-294px] bg-[#181e34] border-2 border-[#232b45] rounded-lg p-6 flex flex-col items-center pixel-card shadow-2xl shadow-[#232b45] mt-2 w-[340px] animate-[bounce_2s_infinite_100ms]"
+          className="pointer-events-auto mr-[-294px] bg-[#181e34] border-2 border-[#232b45] rounded-lg p-6 flex flex-col items-center pixel-card shadow-2xl shadow-[#232b45] mt-[-50px] w-[340px] animate-float-xy"
           style={{ opacity: profileOpacity, transition: 'opacity 0.2s cubic-bezier(0.4,0,0.2,1)' }}
         >
           <Image src="/introduction.png" alt="Avatar" width={96} height={96} className="mb-2" />
@@ -101,14 +98,14 @@ export default function Home() {
             <div className="flex items-center gap-2"><Image src="/pixel-badge.png" alt="Badges" width={20} height={20} /> <span className="font-bold">1</span> <span className="text-xs text-gray-400">Badges</span></div>
             <div className="flex items-center gap-2"><Image src="/pixel-streak.png" alt="Streak" width={20} height={20} /> <span className="font-bold">2</span> <span className="text-xs text-gray-400">Day streak</span></div>
           </div>
-          <button className="w-full border-2 border-[#bfc9e0] rounded px-4 py-2 mt-2 pixel-font text-lg text-white hover:bg-[#232b45] transition">View profile</button>
+          <Link href="/profile" className="pixel-button">View profile</Link>
         </div>
       </div>
       {/* Main Content */}
       <div className="flex flex-col gap-16 lg:pr-0">
         {/* Home Section with Profile Card */}
         <section id="home" className="flex flex-row items-start gap-8 w-full max-w-4xl mt-[-405px] ml-4">
-          <div className="flex flex-col items-start gap-4 flex-1 -ml-[50px]">
+          <div className="flex flex-col items-start gap-4 flex-1 -ml-[50px]" style={{ marginTop: '20px' }}>
             <h1 className="text-4xl font-bold pixel-font text-yellow-400 mb-2 ml-2">HOLA,</h1>
             <div className="text-2xl font-bold pixel-font text-yellow-300 ml-2">This is Harshitha Salian</div>
             <p className="text-base text-gray-300 leading-8 max-w-xl ml-2">
@@ -119,7 +116,7 @@ export default function Home() {
 
         {/* About Section */}
         <section id="about" className="flex flex-col items-center gap-4 mt-[130px]">
-          <div className="flex flex-row items-center bg-[#181e34] border border-[#232b45] rounded-lg p-8 shadow-2xl shadow-[#232b45] w-[1300px] h-[500px] min-w-[1300px] min-h-[500px] max-w-none max-h-none animate-float-xy">
+          <div className="flex flex-row items-center bg-[#181e34] border border-[#232b45] rounded-lg p-8 shadow-2xl shadow-[#232b45] w-[1300px] h-[500px] min-w-[1300px] min-h-[500px] max-w-none max-h-none animate-float-xy" style={{ opacity: 0.95, zIndex: 20 }}>
             <div className="flex-shrink-0 flex flex-col items-center justify-center h-full mr-[33px] gap-4">
               <Image src="/jumping.png" alt="Jumping" width={240} height={240} className="mb-2" />
 
