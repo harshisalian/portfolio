@@ -27,16 +27,25 @@ export default function RootLayout({
       <body
         className="pixel-font antialiased bg-[#101624] text-white min-h-screen"
       >
+        {/* Floating boxes for all pages */}
+        <div className="floating-box animate-float-ltr" style={{ top: '10vh' }}>Floating left→right 1</div>
+        <div className="floating-box animate-float-ltr" style={{ top: '40vh' }}>Floating left→right 2</div>
+        <div className="floating-box animate-float-rtl" style={{ top: '20vh' }}>Floating right→left 1</div>
+        <div className="floating-box animate-float-rtl" style={{ top: '60vh' }}>Floating right→left 2</div>
+        <div className="floating-box animate-float-ttb" style={{ left: '20vw' }}>Floating top→bottom 1</div>
+        <div className="floating-box animate-float-ttb" style={{ left: '70vw' }}>Floating top→bottom 2</div>
+        <div className="floating-box animate-float-btt" style={{ left: '40vw' }}>Floating bottom→top 1</div>
+        <div className="floating-box animate-float-btt" style={{ left: '80vw' }}>Floating bottom→top 2</div>
         <nav className="w-full flex items-center justify-between px-8 py-6 border-b-4 border-[#232b45] bg-[#181e34] shadow-lg min-h-[72px]">
           <div className="flex items-center gap-3">
             <span className="text-2xl font-bold tracking-widest pixel-font"> Portfolio</span>
           </div>
           <ul className="flex gap-6 text-base font-mono">
-            <li><a href="#home" className="hover:text-yellow-400 transition mt-[6px]">Home</a></li>
-            <li><a href="#projects" className="hover:text-yellow-400 transition mt-[6px]">Projects</a></li>
-            <li><a href="#blog" className="hover:text-yellow-400 transition mt-[6px]">Blog</a></li>
-            <li><a href="#about" className="hover:text-yellow-400 transition mt-[6px]">About</a></li>
-            <li><a href="#contact" className="hover:text-yellow-400 transition mt-[6px]">Contact</a></li>
+            <li><a href="/" className="hover:text-yellow-400 transition mt-[6px]">Home</a></li>
+            <li><a href="/projects" className="hover:text-yellow-400 transition mt-[6px]">Projects</a></li>
+            <li><a href="/blog" className="hover:text-yellow-400 transition mt-[6px]">Blog</a></li>
+            <li><a href="/game" className="hover:text-yellow-400 transition mt-[6px]">Game?</a></li>
+            <li><a href="/#contact" className="hover:text-yellow-400 transition mt-[6px]">Contact</a></li>
             <li><a href="/profile" className="hover:text-yellow-400 transition mt-[6px]">Profile</a></li>
           </ul>
         </nav>

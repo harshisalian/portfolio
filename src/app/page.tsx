@@ -73,6 +73,11 @@ export default function Home() {
 
   return (
     <div className="relative w-full max-w-6xl mx-auto flex flex-col gap-12 pt-8 px-4">
+      {/* Floating boxes */}
+      <div className="floating-box animate-float-ltr">Floating left→right</div>
+      <div className="floating-box animate-float-rtl">Floating right→left</div>
+      <div className="floating-box animate-float-ttb">Floating top→bottom</div>
+      <div className="floating-box animate-float-btt">Floating bottom→top</div>
       {/* Pixel Computer and Speech Bubble (top left) */}
       <div className="flex flex-row items-center gap-4 mb-8">
         <Image src="/pixel-computer.png" alt="Pixel Computer" width={80} height={80} />
@@ -84,7 +89,7 @@ export default function Home() {
       {/* Profile Card at top right below nav, sticky and bouncing, 100px from right */}
       <div className="hidden lg:flex w-full justify-end pointer-events-none" style={{ position: 'sticky', top: '88px', zIndex: 20 }}>
         <div
-          className="pointer-events-auto mr-[-294px] bg-[#181e34] border-2 border-[#232b45] rounded-lg p-6 flex flex-col items-center pixel-card shadow-lg mt-2 w-[340px] animate-[bounce_2s_infinite_100ms]"
+          className="pointer-events-auto mr-[-294px] bg-[#181e34] border-2 border-[#232b45] rounded-lg p-6 flex flex-col items-center pixel-card shadow-2xl shadow-[#232b45] mt-2 w-[340px] animate-[bounce_2s_infinite_100ms]"
           style={{ opacity: profileOpacity, transition: 'opacity 0.2s cubic-bezier(0.4,0,0.2,1)' }}
         >
           <Image src="/introduction.png" alt="Avatar" width={96} height={96} className="mb-2" />
@@ -114,7 +119,7 @@ export default function Home() {
 
         {/* About Section */}
         <section id="about" className="flex flex-col items-center gap-4 mt-[130px]">
-          <div className="flex flex-row items-center bg-[#181e34] border border-[#232b45] rounded-lg p-8 shadow-lg w-[1300px] h-[500px] min-w-[1300px] min-h-[500px] max-w-none max-h-none">
+          <div className="flex flex-row items-center bg-[#181e34] border border-[#232b45] rounded-lg p-8 shadow-2xl shadow-[#232b45] w-[1300px] h-[500px] min-w-[1300px] min-h-[500px] max-w-none max-h-none animate-float-xy">
             <div className="flex-shrink-0 flex flex-col items-center justify-center h-full mr-[33px] gap-4">
               <Image src="/jumping.png" alt="Jumping" width={240} height={240} className="mb-2" />
 
@@ -148,7 +153,7 @@ export default function Home() {
                 return (
                   <div
                     key={cert.title}
-                    className={`flex flex-col items-center bg-[#181e34] border border-[#232b45] rounded-lg p-8 shadow-lg pixel-card w-96 transition-all duration-300 ${style}`}
+                    className={`flex flex-col items-center bg-[#181e34] border border-[#232b45] rounded-lg p-8 shadow-2xl shadow-[#232b45] pixel-card w-96 transition-all duration-300 ${style}`}
                   >
                     <Image src={cert.src} alt={cert.alt} width={320} height={180} className="rounded mb-4" />
                     <div className="h-[50px]" />
@@ -174,7 +179,7 @@ export default function Home() {
         <section id="contact" className="flex flex-col items-center gap-4 w-full">
           <h2 className="text-2xl font-bold pixel-font text-purple-400 mb-2">Contact</h2>
           <div className="flex flex-row items-center gap-6 w-full px-8">
-            <form className="flex flex-col gap-4 w-full bg-[#181e34] border border-[#232b45] rounded-lg p-6 shadow-lg">
+            <form className="flex flex-col gap-4 w-full bg-[#181e34] border border-[#232b45] rounded-lg p-6 shadow-2xl shadow-[#232b45] animate-float-xy">
               <input type="text" placeholder="Your Name" className="bg-[#101624] border border-[#232b45] rounded px-3 py-2 text-white focus:outline-none" />
               <input type="email" placeholder="Your Email" className="bg-[#101624] border border-[#232b45] rounded px-3 py-2 text-white focus:outline-none" />
               <textarea placeholder="Your Message" className="bg-[#101624] border border-[#232b45] rounded px-3 py-2 text-white focus:outline-none" rows={4} />
