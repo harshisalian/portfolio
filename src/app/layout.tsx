@@ -1,16 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -41,12 +32,12 @@ export default function RootLayout({
             <span className="text-2xl font-bold tracking-widest pixel-font"> Portfolio</span>
           </div>
           <ul className="flex gap-6 text-base font-mono">
-            <li><a href="/" className="hover:text-yellow-400 transition mt-[6px]">Home</a></li>
-            <li><a href="/projects" className="hover:text-yellow-400 transition mt-[6px]">Projects</a></li>
-            <li><a href="/blog" className="hover:text-yellow-400 transition mt-[6px]">Blog</a></li>
-            <li><a href="/game" className="hover:text-yellow-400 transition mt-[6px]">Game?</a></li>
-            <li><a href="/#contact" className="hover:text-yellow-400 transition mt-[6px]">Contact</a></li>
-            <li><a href="/profile" className="hover:text-yellow-400 transition mt-[6px]">Profile</a></li>
+            <li><Link href="/" className="hover:text-yellow-400 transition mt-[6px]">Home</Link></li>
+            <li><Link href="/projects" className="hover:text-yellow-400 transition mt-[6px]">Projects</Link></li>
+            <li><Link href="/blog" className="hover:text-yellow-400 transition mt-[6px]">Blog</Link></li>
+            <li><Link href="/game" className="hover:text-yellow-400 transition mt-[6px]">Game?</Link></li>
+            <li><Link href="/#contact" className="hover:text-yellow-400 transition mt-[6px]">Contact</Link></li>
+            <li><Link href="/profile" className="hover:text-yellow-400 transition mt-[6px]">Profile</Link></li>
           </ul>
         </nav>
         <main className="w-full px-2">

@@ -139,7 +139,7 @@ export default function Home() {
           <div className="flex flex-row items-center gap-4 mt-[100px]">
             <button onClick={handlePrev} className="text-3xl px-2 py-1 rounded-full bg-[#232b45] text-white hover:bg-green-400 hover:text-[#232b45] transition disabled:opacity-30" disabled={certIndex === 0}>&lt;</button>
             <div className="flex flex-row gap-6 w-[900px] justify-center items-center">
-              {showCerts.map((i, idx) => {
+              {showCerts.map((i) => {
                 if (i < 0 || i >= certificates.length) {
                   return <div key={i} className="w-64 h-56" />; // empty space for out-of-bounds
                 }

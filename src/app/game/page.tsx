@@ -16,7 +16,7 @@ const initialBoard = [
 const cellSize = 56;
 
 export default function Game() {
-  const [board, setBoard] = useState(initialBoard);
+  const [board] = useState(initialBoard);
   const [playerPos, setPlayerPos] = useState({ row: 3, col: 3 });
   const [won, setWon] = useState(false);
   const boardRef = useRef<HTMLDivElement>(null);
@@ -63,7 +63,8 @@ export default function Game() {
       <div className="floating-box animate-float-ttb">Floating top→bottom</div>
       <div className="floating-box animate-float-btt">Floating bottom→top</div>
       {/* Game content */}
-      <h2 className="text-3xl font-bold pixel-font text-yellow-400 mb-6">Sokoban-like Game</h2>
+      <h2 className="text-3xl font-bold pixel-font text-yellow-400 mb-6">Will Harshitha’s bank account stop crying soon?
+      </h2>
       <div
         ref={boardRef}
         tabIndex={0}
