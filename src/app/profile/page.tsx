@@ -29,7 +29,7 @@ export default function Profile() {
           </div>
           {/* Social Icons at the bottom of the card */}
           <div className="flex flex-row gap-6 mt-6 mb-2">
-            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/harshitha-salian-36a923253/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
               <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="24" height="24" rx="4" fill="#0A66C2" />
                 <path d="M7.5 8.5C8.32843 8.5 9 7.82843 9 7C9 6.17157 8.32843 5.5 7.5 5.5C6.67157 5.5 6 6.17157 6 7C6 7.82843 6.67157 8.5 7.5 8.5Z" fill="white" />
@@ -37,14 +37,14 @@ export default function Profile() {
                 <path d="M10.75 10H12.25V11.1C12.25 11.1 12.75 10 14.25 10C15.75 10 16.25 11.1 16.25 12.5V18H14.75V13C14.75 12.45 14.3 12 13.75 12C13.2 12 12.75 12.45 12.75 13V18H11.25V10H10.75Z" fill="white" />
               </svg>
             </a>
-            <a href="mailto:your.email@gmail.com" target="_blank" rel="noopener noreferrer" title="Gmail">
+            <a href="mailto:harshisalian3003@gmail.com" target="_blank" rel="noopener noreferrer" title="Gmail">
               <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="24" height="24" rx="4" fill="#fff" />
                 <path d="M3 7.5V16.5C3 17.3284 3.67157 18 4.5 18H19.5C20.3284 18 21 17.3284 21 16.5V7.5C21 6.67157 20.3284 6 19.5 6H4.5C3.67157 6 3 6.67157 3 7.5Z" fill="#EA4335" />
                 <path d="M3 7.5L12 13.5L21 7.5" stroke="#34A853" strokeWidth="2" />
               </svg>
             </a>
-            <a href="https://www.instagram.com/your-instagram" target="_blank" rel="noopener noreferrer" title="Instagram">
+            <a href="https://www.instagram.com/harshiee.salian/" target="_blank" rel="noopener noreferrer" title="Instagram">
               <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="24" height="24" rx="4" fill="#fff" />
                 <radialGradient id="ig-gradient" cx="0.5" cy="0.5" r="0.5">
@@ -57,7 +57,7 @@ export default function Profile() {
                 <circle cx="18" cy="6" r="1" fill="white" />
               </svg>
             </a>
-            <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <a href="https://github.com/harshisalian" target="_blank" rel="noopener noreferrer" title="GitHub">
               <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="24" height="24" rx="4" fill="#181717" />
                 <path d="M12 2C6.48 2 2 6.58 2 12.26C2 16.62 4.87 20.26 8.84 21.5C9.34 21.58 9.5 21.3 9.5 21.06C9.5 20.85 9.49 20.3 9.49 19.61C7 20.09 6.35 18.73 6.13 18.18C6.02 17.91 5.5 17.03 5.09 16.81C4.75 16.63 4.22 16.13 5.08 16.12C5.9 16.11 6.5 16.89 6.68 17.16C7.64 18.7 9.13 18.26 9.72 18.01C9.8 17.36 10.05 16.92 10.33 16.7C8.28 16.48 6.08 15.77 6.08 12.5C6.08 11.53 6.43 10.74 7.01 10.12C6.91 9.9 6.6 8.93 7.11 7.67C7.11 7.67 7.86 7.43 9.5 8.57C10.2 8.37 10.97 8.27 11.74 8.27C12.51 8.27 13.28 8.37 13.98 8.57C15.62 7.43 16.37 7.67 16.37 7.67C16.88 8.93 16.57 9.9 16.47 10.12C17.05 10.74 17.4 11.53 17.4 12.5C17.4 15.78 15.19 16.48 13.14 16.7C13.5 16.98 13.81 17.54 13.81 18.36C13.81 19.44 13.8 20.67 13.8 21.06C13.8 21.3 13.96 21.59 14.46 21.5C18.43 20.26 21.3 16.62 21.3 12.26C21.3 6.58 16.82 2 12 2Z" fill="white" />

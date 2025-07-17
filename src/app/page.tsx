@@ -89,15 +89,10 @@ export default function Home() {
           className="pointer-events-auto mr-[-294px] bg-[#181e34] border-2 border-[#232b45] rounded-lg p-6 flex flex-col items-center pixel-card shadow-2xl shadow-[#232b45] mt-[-50px] w-[340px] animate-float-xy"
           style={{ opacity: profileOpacity, transition: 'opacity 0.2s cubic-bezier(0.4,0,0.2,1)' }}
         >
-          <Image src="/introduction.png" alt="Avatar" width={96} height={96} className="mb-2" />
+          <Image src="/intro.png" alt="Avatar" width={96} height={96} className="mb-2" />
           <div className="text-xl font-bold mb-[5px]">Harshitha</div>
           <div className="text-sm text-gray-300 mb-2">ETALYX</div>
-          <div className="grid grid-cols-2 gap-x-6 gap-y-2 mb-4">
-            <div className="flex items-center gap-2"><Image src="/pixel-xp.png" alt="XP" width={20} height={20} /> <span className="font-bold">50</span> <span className="text-xs text-gray-400">Total XP</span></div>
-            <div className="flex items-center gap-2"><Image src="/pixel-rank.png" alt="Rank" width={20} height={20} /> <span className="font-bold">Bronze</span> <span className="text-xs text-gray-400">Rank</span></div>
-            <div className="flex items-center gap-2"><Image src="/pixel-badge.png" alt="Badges" width={20} height={20} /> <span className="font-bold">1</span> <span className="text-xs text-gray-400">Badges</span></div>
-            <div className="flex items-center gap-2"><Image src="/pixel-streak.png" alt="Streak" width={20} height={20} /> <span className="font-bold">2</span> <span className="text-xs text-gray-400">Day streak</span></div>
-          </div>
+          <div className="mb-4 text-lg text-pink-400 pixel-font">👾unemployed coder👾</div>
           <Link href="/profile" className="pixel-button">View profile</Link>
         </div>
       </div>
@@ -105,11 +100,14 @@ export default function Home() {
       <div className="flex flex-col gap-16 lg:pr-0">
         {/* Home Section with Profile Card */}
         <section id="home" className="flex flex-row items-start gap-8 w-full max-w-4xl mt-[-405px] ml-4">
-          <div className="flex flex-col items-start gap-4 flex-1 -ml-[50px]" style={{ marginTop: '20px' }}>
-            <h1 className="text-4xl font-bold pixel-font text-yellow-400 mb-2 ml-2">HOLA,</h1>
-            <div className="text-2xl font-bold pixel-font text-yellow-300 ml-2">This is Harshitha Salian</div>
+          <div className="flex flex-col items-start gap-4 flex-1 -ml-[50px]" style={{ marginTop: '140px' }}>
+            <h1 className="text-8xl font-bold pixel-font" style={{ marginLeft: '-40px', marginBottom: '15px', color: '#e066ff' }}>HOLA,</h1>
+            <div className="text-6xl font-bold pixel-font" style={{ marginLeft: '-40px', marginTop: '10px', marginBottom: '10px', color: '#e066ff' }}>
+              <span style={{ display: 'block' }}>This is</span>
+              <span style={{ display: 'block', marginTop: '20px', marginBottom: '20px', color: '#e066ff' }}>HARSHITHA SALIAN</span>
+            </div>
             <p className="text-base text-gray-300 leading-8 max-w-xl ml-2">
-              Third-year Computer Science Engineering student at Shree Devi Institute of Technology, passionate about coding, technology, and real-world projects. Always curious and open to new opportunities for growth.
+
             </p>
           </div>
         </section>
@@ -118,14 +116,19 @@ export default function Home() {
         <section id="about" className="flex flex-col items-center gap-4 mt-[130px]">
           <div className="flex flex-row items-center bg-[#181e34] border border-[#232b45] rounded-lg p-8 shadow-2xl shadow-[#232b45] w-[1300px] h-[500px] min-w-[1300px] min-h-[500px] max-w-none max-h-none animate-float-xy" style={{ opacity: 0.95, zIndex: 20 }}>
             <div className="flex-shrink-0 flex flex-col items-center justify-center h-full mr-[33px] gap-4">
-              <Image src="/jumping.png" alt="Jumping" width={240} height={240} className="mb-2" />
+              <Image src="/victory.png" alt="Jumping" width={240} height={240} className="mb-2" />
 
             </div>
             <div className="flex flex-col items-start w-full h-full justify-center">
-              <h2 className="text-4xl font-bold pixel-font text-blue-400 mb-2">About Me</h2>
-              <p className="text-base text-gray-300 leading-8">
-                I am a third-year Computer Science Engineering student at Shree Devi Institute of Technology, Mangaluru. My journey in technology began with a curiosity for how things work, which soon turned into a passion for coding and building real-world solutions. I am constantly learning new programming languages, algorithms, and software development practices. I thrive in collaborative environments, enjoy participating in hackathons, and love sharing knowledge with peers. My goal is to leverage my skills to solve meaningful problems and contribute to the tech community. I am open to new opportunities, eager to volunteer for science and technology causes, and always ready to take on new challenges.
-              </p>
+              <h2 className="text-4xl font-bold pixel-font text-blue-400 mb-2" style={{ marginBottom: '30px' }}>About Me</h2>
+              <div className="text-base text-gray-300 leading-8">
+                <div style={{ marginBottom: '12px' }}>👩‍💻 Name: Harshitha Salian</div>
+                <div style={{ marginBottom: '12px' }}>🎓 Status: Final-year CSE student @ Shree Devi Institute of Technology</div>
+                <div style={{ marginBottom: '12px' }}>☁️ Focus: Cloud computing enthusiast — love exploring AWS, Azure &amp; the future of scalable systems</div>
+                <div style={{ marginBottom: '12px' }}>🧑‍💻 Skills: Comfortable with coding, debugging, deploying — always down to learn new stacks</div>
+                <div style={{ marginBottom: '12px' }}>🚀 Goal: Build real stuff that actually solves problems</div>
+                <div style={{ marginBottom: '12px' }}>🔄 Vibe: Always curious, always shipping, always leveling up</div>
+              </div>
             </div>
           </div>
         </section>
