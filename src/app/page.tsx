@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
   // Typing animation for welcome message
-  const welcomeText = "Namaste peoples, welcome to ETALYX world!";
+  const welcomeText = "Let’s connect — and build something cool together!";
   const [typedText, setTypedText] = useState("");
   useEffect(() => {
     let i = 0;
@@ -122,20 +122,23 @@ export default function Home() {
             <div className="flex flex-col items-start w-full h-full justify-center">
               <h2 className="text-4xl font-bold pixel-font text-blue-400 mb-2" style={{ marginBottom: '30px' }}>About Me</h2>
               <div className="text-base text-gray-300 leading-8">
-                <div style={{ marginBottom: '12px' }}>👩‍💻 Name: Harshitha Salian</div>
-                <div style={{ marginBottom: '12px' }}>🎓 Status: Final-year CSE student @ Shree Devi Institute of Technology</div>
-                <div style={{ marginBottom: '12px' }}>☁️ Focus: Cloud computing enthusiast — love exploring AWS, Azure &amp; the future of scalable systems</div>
-                <div style={{ marginBottom: '12px' }}>🧑‍💻 Skills: Comfortable with coding, debugging, deploying — always down to learn new stacks</div>
-                <div style={{ marginBottom: '12px' }}>🚀 Goal: Build real stuff that actually solves problems</div>
-                <div style={{ marginBottom: '12px' }}>🔄 Vibe: Always curious, always shipping, always leveling up</div>
+                <div style={{ marginBottom: '12px' }}>Hey, I’m Harshitha Salian</div>
+                <div style={{ marginBottom: '12px' }}>Final-year Computer Science & Engineering student @ Shree Devi Institute of Technology</div>
+                <div style={{ marginBottom: '12px' }}> Cloud geek in the making — I love diving deep into AWS, Azure, and next-gen scalable systems.</div>
+                <div style={{ marginBottom: '12px' }}>Code, debug, deploy, repeat. I’m fluent in problem-solving, quick to learn any stack, and never afraid to break (and fix) things.</div>
+                <div style={{ marginBottom: '12px' }}> Mission: Build things that actually work and actually help people.</div>
+                <div style={{ marginBottom: '12px' }}>Mantra: Stay curious. Ship fast. Level up. Repeat.</div>
               </div>
             </div>
+          </div>
+          <div className="mt-4 text-2xl font-bold pixel-font text-pink-400 text-center">
+            Always learning, always building, always leveling up.<br />Let’s make something awesome together!
           </div>
         </section>
 
         {/* Certifications Section */}
         <section id="certifications" className="flex flex-col items-center gap-4 mt-[150px]">
-          <h2 className="text-2xl font-bold pixel-font text-green-400 mb-2">Certifications</h2>
+          <h2 className="text-5xl font-extrabold pixel-font text-green-400 mb-2">Certifications</h2>
           <div className="flex flex-row items-center gap-4 mt-[100px]">
             <button onClick={handlePrev} className="text-3xl px-2 py-1 rounded-full bg-[#232b45] text-white hover:bg-green-400 hover:text-[#232b45] transition disabled:opacity-30" disabled={certIndex === 0}>&lt;</button>
             <div className="flex flex-row gap-6 w-[900px] justify-center items-center">

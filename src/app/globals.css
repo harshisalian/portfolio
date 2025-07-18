@@ -9,13 +9,9 @@
   font-display: swap;
 }
 
-
-/* Pixel/Retro Font Import */
-
-
 :root {
-  --background: #ffffff;
-  --foreground: #120018;
+  --background: #0a0e1a;
+  --foreground: #ffffff;
   --pixel-font: 'Press Start 2P', 'Geist Mono', monospace;
 }
 
@@ -28,8 +24,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #120018;
-    --foreground: #ededed;
+    --background: #0a0e1a;
+    --foreground: #ffffff;
   }
 }
 
@@ -49,7 +45,7 @@ body::before {
   height: 100vh;
   z-index: -1;
   background: url('/bg.gif') center center / cover no-repeat;
-  opacity: 0.17; /* 20% opacity */
+  opacity: 0.17;
   pointer-events: none;
 }
 
@@ -63,9 +59,9 @@ body.game-page::before {
 }
 
 .pixel-card {
-  box-shadow: 0 4px 0 #232b45, 0 8px 0 #120018;
+  box-shadow: 0 4px 0 #2a1f3a, 0 8px 0 #0a0e1a;
   border-radius: 8px;
-  border: 2px solid #232b45;
+  border: 2px solid #2a1f3a;
 }
 
 /* Animation utilities */
@@ -149,13 +145,13 @@ body.game-page::before {
 
 .pixel-button {
   background: #e066ff;
-  color: #232b45;
+  color: #2a1f3a;
   font-family: 'Press Start 2P', 'VT323', monospace;
   font-size: 1.2rem;
   font-weight: bold;
   border: 3px solid #e066ff;
   border-radius: 6px;
-  box-shadow: 2px 2px 0 #e066ff, 4px 4px 0 #232b45;
+  box-shadow: 2px 2px 0 #e066ff, 4px 4px 0 #2a1f3a;
   padding: 0.7rem 2.2rem;
   text-align: center;
   cursor: pointer;
@@ -166,8 +162,8 @@ body.game-page::before {
 }
 .pixel-button:hover, .pixel-button:focus {
   background: #9900bf;
-  color: #181e34;
-  box-shadow: 1px 1px 0 #e066ff, 2px 2px 0 #232b45;
+  color: #0a0e1a;
+  box-shadow: 1px 1px 0 #e066ff, 2px 2px 0 #2a1f3a;
 }
 
 .game-no-bg {
@@ -197,11 +193,11 @@ body.game-page::before {
 }
 
 nav {
-  background-color: #0f1630cc !important; /* 80% opacity */
+  background-color: #0a0e1a !important;
   backdrop-filter: blur(2px);
 }
 
 .game-puzzle-box {
   opacity: 0.95;
-  background: #232b45 !important;
+  background: #2a1f3a !important;
 }

@@ -77,7 +77,9 @@ export default function Profile() {
               </svg>
               <span className="text-3xl font-bold text-white">who am I?</span>
             </div>
-            <div className="text-gray-300 text-base ml-1">I am an artist, illustrator and game designer<br />who is ready to work hard</div>
+            <div className="text-gray-300 text-sm ml-1">
+              Founder of Etalyx. Artist by hobby, but let's be real—my true passion is coding. I treat bugs like mini-bosses, and yes, I actually get excited about fixing them. Coding isn’t just work, it’s my favorite flavor of chaos. If you want someone who can turn coffee into code and memes into motivation, you’re in the right place. Let’s build something that’ll make our future selves say, “Wow, we really did that?”
+            </div>
           </div>
           {/* Education / Experience section (replaces contributions grid) */}
           <div className="bg-[#181e34] border border-[#232b45] rounded-2xl shadow-2xl shadow-[#232b45] p-6 max-w-2xl w-full flex flex-col items-start justify-center relative overflow-hidden animate-float" style={{ minHeight: '370px', width: 'calc(100% + 50px)' }}>
